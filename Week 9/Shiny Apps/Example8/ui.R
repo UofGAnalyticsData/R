@@ -4,7 +4,7 @@ fluidPage(
         sidebarPanel(
             sliderInput("range", "Subset range", min=0, max=60, value=c(0,60)),
 #                        ^^^^^ Label used in server.R when querying slider      
-            downloadButton("download1", "Download subset", icon="download")
+            downloadButton("download1", "Download subset")
 #                          ^^^^^^^^^^^  Label used in server.R when generating download
         ),
         mainPanel(
